@@ -1,0 +1,20 @@
+site_name: Chaterview Docs Server
+
+nav:
+  - Introduction: 'index.md'
+  - 'Issues': 'https://github.com/withDogecoin/chaterview/issues'
+  - 'Discussions': 'https://github.com/withDogecoin/chaterview/discussions'
+
+# pip install mkdocs-swagger-ui
+# pip install mkdocs-swagger-ui-tag
+# pip install mkdocs-table-reader-plugin
+# pip install mkdocs-embed-external-markdown
+plugins:
+  - swagger-ui-tag
+  - search
+  - table-reader
+  - external-markdown
+
+theme:
+  name: material
+  custom_dir: material
