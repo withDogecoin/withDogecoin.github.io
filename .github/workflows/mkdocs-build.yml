@@ -17,10 +17,9 @@ jobs:
           pip install mkdocs-swagger-ui-tag
           pip install mkdocs-table-reader-plugin
           pip install mkdocs-embed-external-markdown
-          pip install ghp-import
       - name: Build and deploy
         run: |
           mkdocs build --clean
-          ghp-import -n site -b gh-pages
+          mkdocs gh-deploy
       - name: Deployed
         run: echo "Deployed Successfully!"
